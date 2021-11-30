@@ -7,8 +7,11 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' render={() => "Home!"} />
-          <Route path='/hello' render={() => <Greeting greeting='Friend' />} />
+          <Route path='/' element={<Greeting />} />
+          <Route
+            path='/'
+            element={<Link to='/greeting'>Get random greeting</Link>}
+          />
         </Switch>
       </BrowserRouter>
     );
