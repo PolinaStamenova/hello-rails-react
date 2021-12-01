@@ -8,12 +8,10 @@ store.dispatch(randomGreeting());
 const App = () => (
   <Provider store={store}>
     <Router>
-      <div className='App'>
-        <Routes>
-          <Route path='/' element={<Greeting />} />
-          <Route path='/greeting' element={<Greeting />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path='/' element={<Greeting />} />
+        <Route path='/greeting' element={<Greeting />} />
+      </Routes>
     </Router>
   </Provider>
 );
