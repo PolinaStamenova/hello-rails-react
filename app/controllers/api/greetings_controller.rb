@@ -16,7 +16,6 @@ module Api
   end
 end
 
-
 # class Api::GreetingsController < ApplicationController
 #   def index
 #     @greeting = Greeting.order(Arel.sql('RANDOM()')).first
